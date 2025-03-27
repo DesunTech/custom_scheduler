@@ -1,0 +1,7 @@
+node_modules
+.env
+package-lock.json
+.cursor
+.vscode
+dist
+memory-bank/

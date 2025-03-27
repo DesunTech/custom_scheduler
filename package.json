@@ -1,0 +1,43 @@
+{
+  "name": "custom_scheduler",
+  "version": "1.0.0",
+  "description": "A pluggable custom scheduler system for Node.js applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scheduler",
+    "job-queue",
+    "cron",
+    "task-scheduler",
+    "nodejs",
+    "plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.13.0",
+    "node-cron": "^3.0.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "@types/node-cron": "^3.0.11",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.8.2"
+  }
+}
