@@ -1,5 +1,6 @@
 import express from 'express';
 import { Scheduler, JobPriority, JobStatus, Job, JobResult } from '../src';
+import { Request, Response, NextFunction } from 'express';
 
 // Using express without explicit types to avoid TypeScript issues
 async function startServer() {
@@ -266,7 +267,7 @@ async function startServer() {
     });
 
     // Error handling middleware
-    app.use((err, req, res, next) => {
+    app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
       console.error('Error:', err);
       res.status(500).json({
         success: false,
